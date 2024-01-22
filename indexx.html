@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlaces a recursos externos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Contenedor principal del cuerpo -->
+    <div class="body">
+        <!-- Contenedor de la animación de entrega -->
+        <div class="demo">
+            <!-- Contenedor del dron durante el despegue -->
+            <div class="demo__drone-cont demo__drone-cont--takeoff">
+                <!-- Contenedor del dron durante un cambio en la posición X -->
+                <div class="demo__drone-cont demo__drone-cont--shift-x">
+                    <!-- Contenedor del dron durante el aterrizaje -->
+                    <div class="demo__drone-cont demo__drone-cont--landing">
+                        <!-- SVG que representa el dron -->
+                        <svg viewBox="0 0 136 112" class="demo__drone">
+                            <!-- Grupo de elementos cuando el dron se está alejando -->
+                            <g class="demo__drone-leaving">
+                                <!-- Brazo del dron -->
+                                <path class="demo__drone-arm" d="M52,46 c0,0 -15,5 -15,20 l15,10" />
+                                <!-- Segundo brazo del dron -->
+                                <path class="demo__drone-arm demo__drone-arm--2" d="M52,46 c0,0 -15,5 -15,20 l15,10" />
+                                <!-- Parte amarilla del dron -->
+                                <path class="demo__drone-yellow" d="M28,36 l20,0 a20,9 0,0,1 40,0 l20,0 l0,8 l-10,0 c-10,0 -15,0 -23,10 l-14,0 c-10,-10 -15,-10 -23,-10 l-10,0z" />
+                                <!-- Parte verde del dron -->
+                                <path class="demo__drone-green" d="M16,12 a10,10 0,0,1 20,0 l-10,50z" />
+                                <!-- Parte verde del dron (otro lado) -->
+                                <path class="demo__drone-green" d="M100,12 a10,10 0,0,1 20,0 l-10,50z" />
+                                <!-- Otra parte amarilla del dron -->
+                                <path class="demo__drone-yellow" d="M9,8 l34,0 a8,8 0,0,1 0,16 l-34,0 a8,8 0,0,1 0,-16z" />
+                                <!-- Otra parte amarilla del dron (otro lado) -->
+                                <path class="demo__drone-yellow" d="M93,8 l34,0 a8,8 0,0,1 0,16 l-34,0 a8,8 0,0,1 0,-16z" />
+                            </g>
+                            <!-- Paquete que lleva el dron -->
+                            <path class="demo__drone-package demo__drone-green" d="M50,70 l36,0 l-4,45 l-28,0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Círculo que indica el progreso del proceso -->
+            <div class="demo__circle">
+                <div class="demo__circle-inner">
+                    <!-- SVG que representa el paquete -->
+                    <svg viewBox="0 0 16 20" class="demo__circle-package">
+                        <path d="M0,0 16,0 13,20 3,20z" />
+                    </svg>
+                    <!-- Elementos interactivos en el círculo -->
+                    <div class="demo__circle-grabbers"></div>
+                </div>
+                <!-- SVG que muestra el progreso del círculo -->
+                <svg viewBox="0 0 40 40" class="demo__circle-progress">
+                    <!-- Línea que indica el progreso -->
+                    <path class="demo__circle-progress-line" d="M20,0 a20,20 0 0,1 0,40 a20,20 0 0,1 0,-40" />
+                    <!-- Marca de verificación cuando el proceso está completo -->
+                    <path class="demo__circle-progress-checkmark" d="M14,19 19,24 29,14" />
+                </svg>
+            </div>
+
+            <!-- Textos que indican el progreso del proceso -->
+            <div class="demo__text-fields">
+                <div class="demo__text demo__text--step-0" style="color: black;">Realizar la compra</div>
+                <div class="demo__text demo__text--step-1">
+                    Procesando
+                    <span class="demo__text-dots"><span>.</span></span>
+                </div>
+                <div class="demo__text demo__text--step-2">
+                    En camino
+                    <span class="demo__text-dots"><span>.</span></span>
+                </div>
+                <div class="demo__text demo__text--step-3">En proceso</div>
+                <div class="demo__text demo__text--step-4">Entregado</div>
+            </div>
+
+            <!-- Línea que indica la posibilidad de revertir el proceso -->
+            <div class="demo__revert-line"></div>
+        </div>
+
+        <!-- Scripts necesarios -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="index.js"></script>
+    </div>
+</body>
+
+</html>

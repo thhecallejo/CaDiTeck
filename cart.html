@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tienda CaDi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+     <!-- Favicon -->
+     <link href="favicon_io (1)/android-chrome-192x192.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+
+
+
+
+</head>
+
+<body>
+    <!-- Comienzo Cabecera -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-1 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center h-100">
+                    <a class="text-body mr-3" href="SobreNosotros.html">Sobre Nosotros</a>
+                    <a class="text-body mr-3" href="contact.html">Contacto</a>
+                    <a class="text-body mr-3" href="ayuda.html">Ayuda</a>
+                    
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Mi Cuenta</button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a href="cerrar_sesion.php" class="dropdown-item">Cerrar Sesión</a>
+                            
+                    </div>                    
+                    </div>
+                </div>
+                <div class="d-inline-flex align-items-center d-block d-lg-none">
+                    <a href="" class="btn px-0 ml-2">
+                        <i class="fas fa-heart text-dark"></i>
+                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
+                    </a>
+                    <a href="" class="btn px-0 ml-2">
+                        <i class="fas fa-shopping-cart text-dark"></i>
+                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+  
+        <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+            <div class="col-lg-4">
+                
+                <a href="index.html" class="text-decoration-none">
+                    <img class="w-10 h-100" src="img/logo.png" width="160">
+                </a>
+            </div>
+            <div class="col-lg-4 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar Productos">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4 col-6 text-right">
+                <p class="m-0">Servicio al cliente</p>
+                <h5 class="m-0">+34 652 99 51 66</h5>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Cabecera -->
+
+
+    <!-- Comienzo Categorias Desplegable -->
+    <div class="container-fluid bg-dark mb-30">
+        <div class="row px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn d-flex align-items-center justify-content-between bg-primary w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; padding: 0 30px;">
+                    <h6 class="text-dark m-0"><i class="fa fa-bars mr-2"></i>Categorias</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a>
+                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
+                    <div class="navbar-nav w-100">
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Procesadores <i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="" class="dropdown-item">Intel</a>
+                                <a href="" class="dropdown-item">AMD</a>
+                                <a href="" class="dropdown-item">Otros</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Graficas <i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="" class="dropdown-item">NVIDIA</a>
+                                <a href="" class="dropdown-item">AMD</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Refrigeración <i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="" class="dropdown-item">Liquida</a>
+                                <a href="" class="dropdown-item">Aire</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Almacenamiento <i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="" class="dropdown-item">SSD</a>
+                                <a href="" class="dropdown-item">M.2</a>
+                                <a href="" class="dropdown-item">HDD</a>
+                            </div>
+                        </div>
+                        <a href="" class="nav-item nav-link">Portatiles</a>
+                        <a href="" class="nav-item nav-link">TV y audio</a>
+                        <a href="" class="nav-item nav-link">Componentes</a>
+                        <a href="" class="nav-item nav-link">Smartphones</a>
+                        <a href="" class="nav-item nav-link">Consolas</a>
+                        <a href="" class="nav-item nav-link">Accesorios</a>
+                    </div>
+                </nav>
+            </div>
+            
+           <!--LOGO CUANDO ENCOGEN LA PAGINA-->
+           <div class="col-lg-9">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
+                <a href="" class="text-decoration-none d-block d-lg-none">
+                <img class="w-10 h-100" src="img/logo.png" width="160">
+                </a>
+        <!--Boton Con contenido al minimizar-->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="shop.php" class="nav-item nav-link">Tienda</a>
+                        <a href="detail.html" class="nav-item nav-link">Gráficas</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Paginas <i class="fa fa-angle-down mt-1"></i></a>
+                            <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
+                                <a href="cart.html" class="dropdown-item">Carrito</a>
+                                <a href="checkout.html" class="dropdown-item">Revisar Pedido</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    </div>
+                    <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
+                        <a href="" class="btn px-0">
+                            <i class="fas fa-heart text-primary"></i>
+                            <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                        </a>
+                        <a href="cart.html" class="btn px-0 ml-3">
+                            <i class="fas fa-shopping-cart text-primary"></i>
+                            <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+    <!-- Fin de barra de navegacion -->
+
+    <!-- Inicio de Ruta de Navegación-->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb bg-light mb-30">
+                    <a class="breadcrumb-item text-dark" href="index.html">Inicio</a>
+                    <a class="breadcrumb-item text-dark" href="shop.php">Tienda</a>
+                    <span class="breadcrumb-item active">Carrito</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--Fin de Ruta de Navegación -->
+
+
+    <!-- Comienzo de la sección de carrito -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <!-- Columna principal (8 columnas) para la tabla de productos en el carrito -->
+        <div class="col-lg-8 table-responsive mb-5">
+            <!-- Tabla que muestra los detalles de los productos en el carrito -->
+            <table class="table table-light table-borderless table-hover text-center mb-0">
+                <!-- Encabezado de la tabla -->
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Productos</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <!-- Cuerpo de la tabla con los productos -->
+                <tbody class="align-middle">
+                    <!-- Fila para el producto: RTX 4090 -->
+                    <tr>
+                        <!-- Celda con imagen y nombre del producto -->
+                        <td class="align-middle"><img src="img/Grafica.jpg" alt="" style="width: 50px;"> RTX 4090</td>
+                        <!-- Celda con el precio del producto -->
+                        <td class="align-middle">1500.00€</td>
+                        <!-- Celda con la cantidad y botones de incremento/decremento -->
+                        <td class="align-middle">
+                            <div class="input-group quantity mx-auto" style="width: 100px;">
+                                <!-- Botón de decremento -->
+                                <div class="input-group-btn">
+                                    <button class="btn btn-sm btn-primary btn-minus">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <!-- Campo de entrada para la cantidad -->
+                                <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="1">
+                                <!-- Botón de incremento -->
+                                <div class="input-group-btn">
+                                    <button class="btn btn-sm btn-primary btn-plus">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                        <!-- Celda con el total del producto -->
+                        <td class="align-middle">1500.00€</td>
+                        <!-- Celda con botón para eliminar el producto del carrito -->
+                        <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
+                    </tr>
+                        <!-- Fila para el producto: Monitor Gaming -->
+                    <tr>
+                        <!-- Celda con imagen y nombre del producto -->
+                        <td class="align-middle"><img src="img/monitor.jpg" alt="" style="width: 50px;"> Monitor Gaming</td>
+                        <!-- Celda con el precio del producto -->
+                        <td class="align-middle">150€</td>
+                        <!-- Celda con la cantidad y botones de incremento/decremento -->
+                        <td class="align-middle">
+                            <div class="input-group quantity mx-auto" style="width: 100px;">
+                                <!-- Botón de decremento -->
+                                <div class="input-group-btn">
+                                    <button class="btn btn-sm btn-primary btn-minus">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <!-- Campo de entrada para la cantidad -->
+                                <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="1">
+                                <!-- Botón de incremento -->
+                                <div class="input-group-btn">
+                                    <button class="btn btn-sm btn-primary btn-plus">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                        <!-- Celda con el total del producto -->
+                        <td class="align-middle">150€</td>
+                        <!-- Celda con botón para eliminar el producto del carrito -->
+                        <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
+                    </tr>
+                    <!-- Fila para el producto: Ryzen 7 7500X-->
+                        <tr>
+                               <!-- Celda con imagen y nombre del producto -->
+                            <td class="align-middle"><img src="img/Procesador.jpg" alt="" style="width: 50px;"> Ryzen 7 7500X</td>
+                            <!-- Celda con el precio del producto -->
+                            <td class="align-middle">300€</td>
+                            <!-- Celda con la cantidad y botones de incremento/decremento -->
+                            <td class="align-middle">
+                                <!-- Botón de decremento -->
+                                <div class="input-group quantity mx-auto" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-minus" >
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <!-- Campo de entrada para la cantidad -->
+                                    <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="1">
+                                     <!-- Botón de incremento -->
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-plus">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- Celda con el total del producto -->
+                            <td class="align-middle">300€</td>
+                            <!-- Celda con botón para eliminar el producto del carrito -->
+                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle"><img src="img/intel1.jpg" alt="" style="width: 50px;"> INTEL CORE i7</td>
+                            <td class="align-middle">400€</td>
+                            <td class="align-middle">
+                                <div class="input-group quantity mx-auto" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-minus" >
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-plus">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle">400€</td>
+                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle"><img src="img/2teclado.jpg" alt="" style="width: 50px;"> Teclado Gaming</td>
+                            <td class="align-middle">50€</td>
+                            <td class="align-middle">
+                                <div class="input-group quantity mx-auto" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-minus" >
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-plus">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle">50€</td>
+                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Columna de la barra lateral para el formulario de código de cupón -->
+                <div class="col-lg-4">
+                    <!-- Formulario para el código de cupón -->
+                    <form class="mb-30" action="">
+                        <!-- Grupo de entrada con campo de texto y botón de aplicación de cupón -->
+                        <div class="input-group">
+                            <!-- Campo de texto para el código de cupón -->
+                            <input type="text" class="form-control border-0 p-4" placeholder="Código Cupón">
+                            <!-- Botón para aplicar el cupón -->
+                            <div class="input-group-append">
+                                <button class="btn btn-primary">Aplicar Cupón</button>
+                        </div>
+                    </div>
+                </form>
+             <!-- Encabezado con título del resumen del carrito y fondo secundario -->
+<h5 id="subtotalDisplay" class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Resumen del Carrito</span></h5>
+
+<!-- Contenedor con fondo claro para el resumen del carrito -->
+<div class="bg-light p-30 mb-5">
+    <!-- Sección de subtotal con líneas y etiquetas -->
+    <div class="border-bottom pb-2">
+        <!-- Elemento de flexbox para mostrar etiquetas e información de subtotal -->
+        <div class="d-flex justify-content-between mb-3">
+            <!-- Etiqueta para el subtotal -->
+            <h6>Subtotal</h6>
+            <!-- Valor del subtotal, identificado para su manipulación -->
+            <h5 id="subtotalValue"></h5>
+        </div>
+        <!-- Sección para mostrar información sobre el envío -->
+        <div class="d-flex justify-content-between">
+            <!-- Elemento de flexbox con identificador único para el mensaje de envío -->
+            <div id="shippingMessage" class="d-flex justify-content-between">
+                <!-- Etiqueta para el costo de envío -->
+                <h6 class="font-weight-medium">Envío</h6>
+                <!-- Valor del costo de envío, identificado para su manipulación -->
+                <h6 id="shippingCost" class="font-weight-medium"></h6>
+            </div>
+            <!-- Espacio para información adicional, si es necesario -->
+            <h6 class="font-weight-medium"></h6>
+        </div>
+    </div>
+    <!-- Sección para mostrar el total del carrito -->
+    <div class="pt-2">
+        <!-- Elemento de flexbox para mostrar etiquetas e información del total -->
+        <div class="d-flex justify-content-between mt-2">
+            <!-- Etiqueta para el total -->
+            <h5>Total</h5>
+            <!-- Valor total, identificado para su manipulación -->
+            <h5 id="totalValue"></h5>
+        </div>
+    </div>
+</div>
+
+<!-- Botón para proceder al pago, estilizado y centrado -->
+<button class="btn btn-block btn-primary font-weight-bold my-3 py-3">Proceder al pago</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+// Función para inicializar el script del carrito
+function initCartScript() {
+        // Maneja el evento de clic en el botón "Menos"
+        $(".btn-minus").on("click", function () {
+            var input = $(this).parent().siblings("input");
+            var currentValue = parseInt(input.val());
+
+            // Verifica que el valor actual sea mayor que 1 antes de decrementar
+            if (currentValue > 1) {
+                input.val(currentValue - 1);
+                updateTotal($(this));
+            }
+        });
+    
+            // Maneja el evento de clic en el botón "Más"
+        $(".btn-plus").on("click", function () {
+            var input = $(this).parent().siblings("input");
+            var currentValue = parseInt(input.val());
+
+            // Incrementa el valor actual y actualiza el total
+            input.val(currentValue + 1);
+            updateTotal($(this));
+        });
+    
+           // Maneja el evento de clic en el botón "Eliminar"
+        $(".btn-danger").on("click", function () {
+            // Elimina la fila correspondiente y actualiza el total
+            $(this).closest("tr").remove();
+            updateTotal($(this));
+        });
+    
+              // Función para actualizar el total de un producto
+        function updateTotal(element) {
+            var quantity = parseInt(element.closest("tr").find("input").val());
+            var price = parseFloat(element.closest("tr").find("td:eq(1)").text().replace('€', ''));
+            var total = quantity * price;
+    
+             // Actualiza la columna "Total" para reflejar el subtotal por producto
+            element.closest("tr").find("td:eq(3)").text(total.toFixed(2) + '€');
+            
+            // Actualiza el resumen del carrito
+            updateCartSummary();
+        }
+    
+            // Función para actualizar el resumen total del carrito
+                function updateCartSummary() {
+            var subtotal = 0;
+
+    
+                  // Itera sobre las filas de la tabla
+            $(".table tbody tr").each(function () {
+                var price = parseFloat($(this).find("td:eq(1)").text().replace('€', ''));
+                var quantity = parseInt($(this).find("input").val());
+                subtotal += price * quantity;
+
+                // Actualiza la columna "Total" para reflejar el subtotal por producto
+                $(this).find("td:eq(3)").text((price * quantity).toFixed(2) + '€');
+            });
+    
+                // Define el umbral para envío gratuito
+                var freeShippingThreshold = 50;
+                var shipping = subtotal >= freeShippingThreshold ? 0 : 10;
+    
+                var total = subtotal + shipping;
+    
+                // Actualiza los elementos con los identificadores únicos
+                $("#subtotalValue").text(subtotal.toFixed(2) + '€');
+                $("#totalValue").text(total.toFixed(2) + '€');
+    
+                // Actualiza el mensaje de envío
+                var shippingMessage = $("#shippingMessage");
+                var shippingCost = $("#shippingCost");
+    
+                if (shipping === 0) {
+                    shippingMessage.text("Envío Gratis");
+                    shippingCost.text("");
+                } else {
+                    shippingMessage.text("Envío");
+                    shippingCost.text(shipping.toFixed(2) + '€');
+                }
+                window.onload = function () {
+                    initCartScript();
+                    updateCartSummary(); // Llama a la función al cargar la página
+};
+            }
+    
+            $("form").submit(function (event) {
+                event.preventDefault();
+                alert("Cupón aplicado (simulado).");
+            });
+        }
+    
+        
+
+    </script>
+    <!-- Final Carrito -->
+    
+
+     
+<!-- Comienzo del pie de página -->
+<div class="container-fluid bg-dark text-secondary mt-5 pt-5">
+    <!-- Sección de información de contacto -->
+    <div class="row px-xl-5 pt-5">
+        <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+            <h5 class="text-secondary text-uppercase mb-4">Contacto</h5>
+            <!-- Dirección, correo electrónico y número de teléfono -->
+            <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>C/ Los Gansos 21, Madrid, ES</p>
+            <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@cadikeck.com</p>
+            <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+34 652 99 51 66</p>
+        </div>
+        
+        <!-- Columna con enlaces rápidos y de cuenta -->
+        <div class="col-lg-8 col-md-12">
+            <div class="row">
+            <!-- Sección de enlaces rápidos -->
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-secondary text-uppercase mb-4">COMPRA RÁPIDA</h5>
+            <!-- Enlaces rápidos a secciones del sitio -->
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-secondary mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                        <a class="text-secondary mb-2" href="shop.php"><i class="fa fa-angle-right mr-2"></i>Nuestra tienda</a>
+                        <a class="text-secondary mb-2" href="Gráficas"><i class="fa fa-angle-right mr-2"></i>Gráficas</a>
+                        <a class="text-secondary mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>Carrito</a>
+                        <a class="text-secondary mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Revisar Pedido</a>
+                        <a class="text-secondary" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contactanos</a>
+                    </div>
+                </div>
+                <!-- Sección de enlaces de cuenta -->
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-secondary text-uppercase mb-4">Mi cuenta</h5>
+                 <!-- Enlaces relacionados con la cuenta del usuario -->
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-secondary mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                        <a class="text-secondary mb-2" href="shop.php"><i class="fa fa-angle-right mr-2"></i>Nuestra tienda</a>
+                        <a class="text-secondary mb-2" href="Gráficas"><i class="fa fa-angle-right mr-2"></i>Gráficas</a>
+                        <a class="text-secondary mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>Carrito</a>
+                        <a class="text-secondary mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Revisar Pedido</a>
+                        <a class="text-secondary" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contactanos</a>
+                    </div>
+                </div>
+            <!-- Sección de boletín informativo y redes sociales -->
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-secondary text-uppercase mb-4">BOLETIN INFORMATIVO</h5>
+            <!-- Formulario de suscripción al boletín -->
+                    <p>Estate atento a los ultimos lanzamientos antes que nadie. ¡Que no se te escapen!</p>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Tu Direcion de Correo">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary">Registrate</button>
+                            </div>
+                        </div>
+                    </form>
+                    <h6 class="text-secondary text-uppercase mt-4 mb-3">Siguenos en</h6>
+                    <div class="d-flex">
+                        <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Sección de derechos de autor y logos de pagos -->
+    <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="col-md-6 px-xl-0">
+            <p class="mb-md-0 text-center text-md-left text-secondary">
+                &copy; <a class="text-primary" href="#">CaDiTECK.com</a>. Todos los derechos y diseño reservados
+                por
+                <a class="text-primary" href="index.html">CaDiTECK</a>
+            </p>
+        </div>
+         <!-- Columna con logos de pagos -->
+        <div class="col-md-6 px-xl-0 text-center text-md-right">
+            <img class="img-fluid" src="img/payments.png" alt="">
+        </div>
+    </div>
+</div>
+<!-- Fin del pie de página -->
+
+
+
+<!-- Boton volver arriba -->
+<a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<!-- JavaScript Librarias -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Contacto Javascript Archivo -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Plantilla Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
